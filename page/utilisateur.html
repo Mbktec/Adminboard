@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>utilisateur</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.ckeditor.com/ckeditor5/32.0.0/classic/ckeditor.js"></script>
+
+
+</head>
+<body>
+    
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <div class="container">
+      <a class="navbar-brand text-white" href="index.html">adminBoard</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="#">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="posts.html">Posts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="categories.html">Categories</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="ulti.html">Utilisateurs</a>
+          </li>
+        </ul>
+        <div class="text d-flex">
+          <div  class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <b class="bi bi-person-fill">Bienvenu Moubarak</b>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="utilisateur.html">
+                <b class="bi bi-person-circle"> Profile</b>
+              </a></li>
+              <li><a class="dropdown-item" href="setting.html">
+                <b class="bi bi-gear">Parametres</b> 
+              </a></li>
+            </ul>
+          </div>
+          <div class="nav-item text-end">
+            <a class="nav-link  text-white" href="log.html" tabindex="-1" aria-disabled="true">
+              <b class="bi bi-person-x-fill"> Logout</b>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+   <div class="container-fluid bg-primary py-2">
+       <div class="container">
+        <b class="bi bi-person-fill text-white display-6"> Edit Profile</b>
+       </div>
+   </div>
+    <div class="container-fluid bg-light py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <a href="index.html" class="btn btn-light col-sm-5" role="button" data-bs-toggle="button">
+                        <b class="bi bi-arrow-left-short">  Back To Dashboard</b> 
+                    </a>
+                </div>
+                <div class="col py-2">
+                    <a href="#" class="btn btn-success col-sm-5" role="button" data-bs-toggle="button">
+                        <b class="bi bi-lock-fill"> Change Password</b>
+                    </a>
+                    <a href="#" class="btn btn-danger col-sm-5" role="button" data-bs-toggle="button" aria-pressed="true">
+                        <b class="bi bi-x-lg"> Delete Account </b></a>
+                </div>
+   
+        </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+        <div class="col-sm-8">
+            <div class="card">
+                <div class="card-title bg-light py-2">
+                    Edit Profile
+                </div>
+                        <div class="card-body">
+                            <div class="form">
+                                <div class="mb-3 ">
+                                    <label for=""> Name</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="Moubarak Yacouba">
+                                </div>
+                                <div class="mb-3 ">
+                                    <label for="">Email</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="test@test.com">
+                                </div>
+                        
+                                <div id="editor">
+                                    <p>This is some sample content Lorem ipsum dolor sit amet, consect labore nam..</p><br><br>
+                                </div>
+                                <script>
+                                    ClassicEditor
+                                        .create( document.querySelector( '#editor' ) )
+                                        .catch( error => {
+                                            console.error( error );
+                                        } );
+                                </script>
+                                </div>
+                           </div>
+    </div>
+        </div>
+        <div class="col-sm-4 text-center">
+           
+            <h3>Your Avatar</h3>
+
+            <img src="m1.png" class="img-fluid " alt="...">
+            <div class="d-grid gap-2 col-6 mx-auto ">
+                <button class="btn btn-primary p-2" type="button">Edit Image</button>
+                <button class="btn btn-danger" type="button">Delete Image</button>
+              </div>
+            
+        </div>
+    </div>
+         
+          
+        
+    </div>
+</body>
+</html>
